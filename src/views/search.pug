@@ -1,0 +1,29 @@
+extends base
+include mixins/book
+
+block content
+    div
+        h3 "#{keyword}"와 관련된 책
+        div
+            each book in books
+                +book(book)
+            else
+                span No books related to "#{keyword}" found
+    hr
+    div
+        h3 "#{keyword}"와 비슷한 책
+        div
+            each book in results
+                +book(book)
+            else
+                span No books similar to "#{keyword}" found
+    hr
+    div
+        h3 "#{ID}"님과 취향이 비슷한 사람들이 관심있는 책
+        div
+            if recommends_result
+                each book in recommends_result
+                    +book(book)
+            else
+                span 아직 "#{ID}"님과 취향이 비슷한 사람들이 없습니다.
+        

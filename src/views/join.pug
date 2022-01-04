@@ -1,0 +1,17 @@
+extends base
+
+block content
+    if errorMessage
+        span=errorMessage
+    form(method="POST")
+        input(name="ID", type="text", placeholder="ID", required)
+        input(name="password", type="password", placeholder="Password", required)
+        input(name="password_confirm", type="password", placeholder="Confirm Password", required)
+
+        br
+        input(type="submit", value="Join")
+
+    hr
+    div
+        span Already have an account? 
+        a(href="/login") Log in now &rarr;

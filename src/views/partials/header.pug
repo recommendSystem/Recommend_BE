@@ -1,0 +1,17 @@
+header
+    a(href="/")
+        i.fas.fa-home
+    form(method="GET" action="/search")
+        input(name="keyword", placeholder="Search by title", type="text")
+        button
+            i.fas.fa-search
+    nav 
+        ul
+            if loggedIn
+                li
+                    a(href="/logout") Log Out
+                li
+                    span #{loggedInUser.ID}님 안녕하세요:)
+            else
+                li
+                    a(href="/login") Login

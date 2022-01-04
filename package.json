@@ -1,0 +1,41 @@
+{
+  "name": "book_recommendation_backend",
+  "version": "1.0.0",
+  "description": "Data Mining Project - Server Implementation",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon"
+  },
+  "type": "module",
+  "repository": {},
+  "author": "Kiseok-Boo",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.16.3",
+    "bcrypt": "^5.0.1",
+    "compute-cosine-similarity": "^1.0.0",
+    "connect-mongo": "^4.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "socket.io": "^4.4.0",
+    "string-cosine-similarity": "^2.0.1",
+    "ws": "^8.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "nodemon": "^2.0.14",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}
